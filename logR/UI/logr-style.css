@@ -62,6 +62,7 @@ h1
 #logList li .date
 {
     float:right;   
+    color:#666;
 }
 
 #logList li .message
@@ -137,11 +138,6 @@ h1
     white-space: normal;
 }
 
-.quiet
-{
-    color:#666;
-}
-
 .label 
 {
     padding:  1px 3px 1px 3px;
@@ -170,7 +166,7 @@ h1
     background-color: #000;   
 }
 
-.warning
+.warn
 {
     background-color: #F89406;    
 }

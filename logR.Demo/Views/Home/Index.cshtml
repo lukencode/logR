@@ -1,8 +1,40 @@
-﻿@{
+﻿@model logR.Demo.Models.HomeViewModel
+           
+@{
     ViewBag.Title = "Home Page";
 }
 
-<h2>@ViewBag.Message</h2>
+<h2>logR Demo</h2>
 <p>
-<strong><a href='/logr-viewer'>log viewers</a></strong>
+    
+    <strong><a href='/logr-viewer'>log viewer</a></strong>
+
+    @using (Html.BeginForm())
+    {
+        <div>
+            <fieldset>
+                <legend>Log Message</legend>
+
+                <div class="editor-label">
+                    Level
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownListFor(m => m.SelectedLevel, Model.Levels)
+                    @Html.ValidationMessageFor(m => m.SelectedLevel)
+                </div>
+
+                <div class="editor-label">
+                    Message
+                </div>
+                <div class="editor-field">
+                    @Html.TextAreaFor(m => m.Message)
+                    @Html.ValidationMessageFor(m => m.Message)
+                </div>
+                
+                <p>
+                    <input type="submit" value="Log it" />
+                </p>
+            </fieldset>
+        </div>
+    }
 </p>

@@ -30,27 +30,40 @@
             <h3>Filter</h3>
             <ul id="filter-options">
                 <li>
-                    <input type="checkbox" />
-                    <span class="label">DEBUG</span>
+                    <input name="trace" type="checkbox" />
+                    <label for="trace" class="label trace">TRACE</label>
                 </li>
                 <li>
-                    <input type="checkbox" />
-                    <span class="label blue">INFO</span>
+                    <input name="debug" type="checkbox" />
+                    <label for="debug" class="label debug">DEBUG</label>
                 </li>
                 <li>
-                    <input type="checkbox" />
-                    <span class="label orange">WARNING</span>
+                    <input name="info" type="checkbox" />
+                    <label for="info" class="label info">INFO</label>
                 </li>
                 <li>
-                    <input type="checkbox" />
-                    <span class="label red">ERROR</span>
+                    <input name="warning" type="checkbox" />
+                    <label for="warning" class="label warning">WARNING</label>
+                </li>
+                <li>
+                    <input name="error" type="checkbox" />
+                    <label for="error" class="label error">ERROR</label>
+                </li>
+                <li>
+                    <input name="fatal" type="checkbox" />
+                    <label for="fatal" class="label fatal">FATAL</label>
                 </li>
             </ul>
+            
+            <h3>About</h3>
+            <p> 
+                Messing around with SignalR to do plug and play (elmah style) realtime log viewer for asp.net.
+            </p>
         </div>
     </div>
 
     <script id="logTemplate" type="text/x-jquery-tmpl">    
-        <li>
+        <li class="new">
             <div class="title">
                 <strong>${ Class }</strong>
                 <span class="label ${ LevelDisplay }">${ LevelDisplay }</span>

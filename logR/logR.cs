@@ -8,19 +8,20 @@ using SignalR.Client.Hubs;
 
 namespace logR
 {
-    public partial class LogR
+    public partial class LogR 
     {
         public static void Init()
         {
             Settings.InitRouting();
         }
 
-        public static void Log(string className, string message)
+        public static void Log(string className, Level level, string message)
         {
             var entry = new LogEntry
             {
                 Message = message,
                 Class = className,
+                Level = level,
                 Date = DateTime.Now
             };
 

@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Level.cs" />
     <Compile Include="logR.cs" />
     <Compile Include="logR.Settings.cs" />
     <Compile Include="logRHub.cs" />

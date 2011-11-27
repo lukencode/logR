@@ -12,12 +12,13 @@ namespace logR.Demo.Controllers
         {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
 
+            LogR.Log("HomeController", Level.Error, "Oh noes error!");
             return View();
         }
 
         public ActionResult About()
         {
-            LogR.Log("HomeController", "WENT TO ABOUT PAGE");
+            LogR.Log("HomeController", Level.Info, "WENT TO ABOUT PAGE");
             return View();
         }
     }

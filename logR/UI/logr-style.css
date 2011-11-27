@@ -31,7 +31,7 @@ h1
     bottom: 0;
 }
 
-#logs ul
+#logList
 {    
     list-style-type:none;
     margin:0;
@@ -39,7 +39,7 @@ h1
     overflow:auto;
 }
 
-#logs ul li
+#logList li
 {
     padding:10px;
     border-bottom: 1px solid #efefef;    
@@ -47,33 +47,34 @@ h1
     clear:both;
 }
 
-#logs ul li:hover
+#logList li:hover
 {
     background-color:#ffff99;
 }
 
-#logs ul li .title
+#logList li .title
 {
     float:left;
 }
 
-#logs ul li .date
+#logList li .date
 {
     float:right;   
 }
 
-#logs ul li .message
+#logList li .message
 {
     clear:both;
     padding:3px 0 0 0;
 }
 
-#logs ul li.empty
+#logList li.empty
 {
     text-align:center;
+    color:#BBB;
 }
 
-#logs ul li.empty:hover
+#logList li.empty:hover
 {
     background-color:#fff;
 }
@@ -127,22 +128,22 @@ h1
     border-radius: 3px;
 }
 
-.green
+.trace
 {
     background-color: #46A546;    
 }
 
-.red
+.error, .fatal
 {
     background-color: #C43C35;    
 }
 
-.orange
+.warning
 {
     background-color: #F89406;    
 }
 
-.blue
+.info
 {
     background-color: #62CFFC;  
 }

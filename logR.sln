@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logR", "logR\logR.csproj", "{EE8C4826-BA45-4AEC-9AC2-425D63C10EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logR.Demo", "logR.Demo\logR.Demo.csproj", "{A8878092-5CD1-44E5-A8F7-33494ECAFFDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE8C4826-BA45-4AEC-9AC2-425D63C10EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8C4826-BA45-4AEC-9AC2-425D63C10EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8C4826-BA45-4AEC-9AC2-425D63C10EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8C4826-BA45-4AEC-9AC2-425D63C10EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8878092-5CD1-44E5-A8F7-33494ECAFFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8878092-5CD1-44E5-A8F7-33494ECAFFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8878092-5CD1-44E5-A8F7-33494ECAFFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8878092-5CD1-44E5-A8F7-33494ECAFFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

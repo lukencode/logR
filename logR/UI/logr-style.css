@@ -1,0 +1,148 @@
+﻿﻿body {
+    font-family: Trebuchet MS;    
+    font-size: 14px;
+}
+
+h1
+{
+    padding: 0 0 0 10px;
+    margin:0;
+}
+
+#log-area
+{    
+    position: absolute;
+    top: 55px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    min-height: 200px;
+}
+
+#logs
+{
+    width: 70%;
+    border: 1px solid #ccc;
+    overflow: auto;
+    margin-left: 0px;
+    padding-left: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#logs ul
+{    
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+#logs ul li
+{
+    padding:10px;
+    border-bottom: 1px solid #efefef;    
+    overflow:auto;
+    clear:both;
+}
+
+#logs ul li:hover
+{
+    background-color:#ffff99;
+}
+
+#logs ul li .title
+{
+    float:left;
+}
+
+#logs ul li .date
+{
+    float:right;   
+}
+
+#logs ul li .message
+{
+    clear:both;
+    padding:3px 0 0 0;
+}
+
+#logs ul li.empty
+{
+    text-align:center;
+}
+
+#logs ul li.empty:hover
+{
+    background-color:#fff;
+}
+
+#info 
+{
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0px;
+    padding-left: 0px;
+    overflow: auto;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 25%;
+    bottom: 70px;
+    margin-left: 2px; /* for #messages border */
+}
+
+#info h3
+{
+    padding:10px;
+    margin:0;
+}
+
+#filter-options
+{
+    padding:0 10px 10px 10px;
+    list-style-type:none;
+    margin:0;
+}
+
+.quiet
+{
+    color:#666;
+}
+
+.label 
+{
+    padding:  1px 3px 1px 3px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #BFBFBF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.green
+{
+    background-color: #46A546;    
+}
+
+.red
+{
+    background-color: #C43C35;    
+}
+
+.orange
+{
+    background-color: #F89406;    
+}
+
+.blue
+{
+    background-color: #62CFFC;  
+}
